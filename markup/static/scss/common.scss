@@ -1,0 +1,31 @@
+// Common styles of the project
+
+html, body {
+    height: 100%;
+}
+
+.page {
+    background: url(/static/img/general/glenn-carstens-peters-203007-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.page__wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+* html .page__wrapper {
+    height: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: Tahoma, Verdana;
+}
+

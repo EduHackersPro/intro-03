@@ -1,0 +1,10 @@
+mixin cta(data)
+    section.cta
+        h1.cta__title Будьте в курсе новостей
+        .cta__description
+            p Укажите свой email и будьте в курсе новостей! Шлём письма не чаще 1 в неделю! Никакого спама, только полезный контент.
+        form.cta__form.subscribe(method="POST" action="subscribe.php")
+            input(type="hidden" name="code" value="some value")
+            label(for="subscribeEmail") Укажите email
+            input#subscribeEmail(type="email" name="email" placeholder="mail@example.com" required)
+            button(type="submit") Подписаться
